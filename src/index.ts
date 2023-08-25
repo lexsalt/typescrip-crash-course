@@ -43,3 +43,27 @@ const user: {
 } = {
     id: 1, name: "Brad"
 }
+
+function addNum(x: number, y: number): number {
+    return x + y
+}
+
+console.log(addNum(1,2))
+
+function log(message: string | number):void {
+    console.log(message)
+}
+
+class Person {
+    id: number
+    name: string
+    constructor (id: number,name: string) {
+        this.id = id
+        this.name = name
+    }
+}
+
+const brad = new Person(1, "Brad Traversy")
+const mike = new Person(2, "Mike Jordan")
+
+console.log(brad,mike)

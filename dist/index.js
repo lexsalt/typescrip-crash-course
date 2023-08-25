@@ -28,3 +28,23 @@ var Direction1;
     Direction1[Direction1["Right"] = 4] = "Right";
 })(Direction1 || (Direction1 = {}));
 console.log(Direction1.Left);
+// object
+const user = {
+    id: 1, name: "Brad"
+};
+function addNum(x, y) {
+    return x + y;
+}
+console.log(addNum(1, 2));
+function log(message) {
+    console.log(message);
+}
+class Person {
+    constructor(id, name) {
+        this.id = id;
+        this.name = name;
+    }
+}
+const brad = new Person(1, "Brad Traversy");
+const mike = new Person(2, "Mike Jordan");
+console.log(brad, mike);
